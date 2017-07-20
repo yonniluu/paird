@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/caiyeon/lunch-with-us/handlers"
-	"github.com/caiyeon/lunch-with-us/store"
-	"github.com/caiyeon/lunch-with-us/vault"
+	"github.com/yonniluu/paird/handlers"
+	"github.com/yonniluu/paird/store"
+	"github.com/yonniluu/paird/vault"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
 	"golang.org/x/crypto/acme/autocert"
@@ -62,7 +62,7 @@ func main() {
 	}
 
 	// serve static folder
-	e.Static("/", "lunch-with-us/docs")
+	e.Static("/", "paird/docs")
 
 	// api routing
 	e.GET("/v1/ping", handlers.Ping())

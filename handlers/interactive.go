@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/caiyeon/lunch-with-us/store"
+	"github.com/yonniluu/paird/store"
 	"github.com/labstack/echo"
 )
 
